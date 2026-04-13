@@ -5,23 +5,23 @@
 class Jt < Formula
   desc "A lightweight CLI to pull Jira Cloud tickets into local markdown files"
   homepage "https://github.com/erickhilda/jt"
-  version "0.1.2"
+  version "0.1.3"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/erickhilda/jt/releases/download/v0.1.2/jt_0.1.2_darwin_amd64.tar.gz"
-      sha256 "5623f9a791604224f42b585276c55f9f4dd3d15ef7bdc14d67777c9ac25d4209"
+      url "https://github.com/erickhilda/jt/releases/download/v0.1.3/jt_0.1.3_darwin_amd64.tar.gz"
+      sha256 "b4a8a224a1883714ec0a448c1900212b8acc82110bdd3084322584adbda005b0"
 
-      def install
+      define_method(:install) do
         bin.install "jt"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/erickhilda/jt/releases/download/v0.1.2/jt_0.1.2_darwin_arm64.tar.gz"
-      sha256 "c90bc758697fc5ee1ccd467d9b8ea949892ce91d76a20298144c544910d32967"
+      url "https://github.com/erickhilda/jt/releases/download/v0.1.3/jt_0.1.3_darwin_arm64.tar.gz"
+      sha256 "285cc5ab4e8c7b71a0e38bf6698bf28ed81c542a0c58a8b1eded1349586f8433"
 
-      def install
+      define_method(:install) do
         bin.install "jt"
       end
     end
@@ -29,16 +29,16 @@ class Jt < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/erickhilda/jt/releases/download/v0.1.2/jt_0.1.2_linux_amd64.tar.gz"
-      sha256 "39b866bc0aa1b17e3012e629513d0fdd23df7fb08e310da7c6f26605b3c3a012"
-      def install
+      url "https://github.com/erickhilda/jt/releases/download/v0.1.3/jt_0.1.3_linux_amd64.tar.gz"
+      sha256 "6e878d81c442201a54f2a4799609851b492c4188760a6134bed981821d4e931b"
+      define_method(:install) do
         bin.install "jt"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/erickhilda/jt/releases/download/v0.1.2/jt_0.1.2_linux_arm64.tar.gz"
-      sha256 "8d7e2d7dc142b2cadbb6f18a19641ee84642d441a14e1bfdea5fb5348df8a589"
-      def install
+      url "https://github.com/erickhilda/jt/releases/download/v0.1.3/jt_0.1.3_linux_arm64.tar.gz"
+      sha256 "3d3bf97ccae662f04c1dd5ccdd7ac8b8845e1198062ba2a7026a2ab50309317a"
+      define_method(:install) do
         bin.install "jt"
       end
     end
