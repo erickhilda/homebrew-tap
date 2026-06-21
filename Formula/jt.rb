@@ -5,21 +5,21 @@
 class Jt < Formula
   desc "A lightweight CLI to pull Jira Cloud tickets into local markdown files"
   homepage "https://github.com/erickhilda/jt"
-  version "0.3.2"
+  version "0.3.3"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/erickhilda/jt/releases/download/v0.3.2/jt_0.3.2_darwin_amd64.tar.gz"
-      sha256 "aa01729af9f0f5c7f4de3df0cd1fe76c94d01cbe35fbef73dfd384fde762e5d9"
+      url "https://github.com/erickhilda/jt/releases/download/v0.3.3/jt_0.3.3_darwin_amd64.tar.gz"
+      sha256 "1ff502a5c3102cb7852c386102a7c513c674a51d5dcc1c700450a6355cf27328"
 
       define_method(:install) do
         bin.install "jt"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/erickhilda/jt/releases/download/v0.3.2/jt_0.3.2_darwin_arm64.tar.gz"
-      sha256 "543ae43ab7777f9d60b480eb6289782114679e27dcceea0a12ac3e6503717ea9"
+      url "https://github.com/erickhilda/jt/releases/download/v0.3.3/jt_0.3.3_darwin_arm64.tar.gz"
+      sha256 "6196a14bfae499f1e753a2054545163a9e64600bf504c8a891ef0df2cba7afda"
 
       define_method(:install) do
         bin.install "jt"
@@ -29,15 +29,15 @@ class Jt < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/erickhilda/jt/releases/download/v0.3.2/jt_0.3.2_linux_amd64.tar.gz"
-      sha256 "5931564a60dd1ad21da9f856ad8cc05b3108bf30c0e18fdfbc05c1e3b9ae9899"
+      url "https://github.com/erickhilda/jt/releases/download/v0.3.3/jt_0.3.3_linux_amd64.tar.gz"
+      sha256 "317831e4445edb0c2b0dcea2c6b4a59cadd4c42accf07e71a2e835774e6019a1"
       define_method(:install) do
         bin.install "jt"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/erickhilda/jt/releases/download/v0.3.2/jt_0.3.2_linux_arm64.tar.gz"
-      sha256 "eaa42fbb0dfd80a0ef295a7b237a19b6daa3c87fb47badaf500f53bb431d5fab"
+      url "https://github.com/erickhilda/jt/releases/download/v0.3.3/jt_0.3.3_linux_arm64.tar.gz"
+      sha256 "2a9765d3ef1490725779c5a7ffd34272db1778a9ccff131be9b4ba0b63d49b6f"
       define_method(:install) do
         bin.install "jt"
       end
